@@ -8,11 +8,11 @@ def stock_purchases():
 
     # Given the prices above and a client's investment budget, how much stock can they buy?
     # 1.1 TODO: Ask the client's name (use the string: "What is your name? ") and save it into a variable
-    first_name=input('what is your name?')
+    first_name = input('what is your name? ')
     # 1.2 TODO: Ask the client how many dollars they would like to invest (use the string: "How much would you like to invest? $")
     # and save it into a variable
     # NOTE: When you use the `input` function to get user input, what do numbers get saved as?
-    investment_dollar = int(input("how much would you like to invest"))
+    investment_dollar = int(input("How much would you like to invest? $"))
     # 1.3 TODO: Uncomment the line below to ask the client which stock they're interested in.
     # NOTE: Take a look at how this input string prints out
     # stock_name = input("\nWhich stock are you interested in? Enter the full name:\nAmazon\nApple\nFacebook\nGoogle\nMicrosoft\nStock Name: ")
@@ -23,15 +23,15 @@ def stock_purchases():
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
     stock = 0
-    if stock_name == 'Amazon'
+    if stock_name == 'Amazon':
         stock = amazon
-    elif stock_name == 'Apple'
-        stock = apple
-    elif stock_name == 'Facebook'
+    elif stock_name == 'Apple':
+         stock = apple
+    elif stock_name == 'Facebook':
          stock = 'Fb'
-    elif stock_name == 'Google'
+    elif stock_name == 'Google':
         stock = 'google'
-    elif stock_name == 'Microsoft'
+    elif stock_name == 'Microsoft':
         stock = 'mstf'
 
 
@@ -39,4 +39,4 @@ def stock_purchases():
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
     num_stock = investment_dollar//stock
-    print (f'{first_name} has ${investment_dollar} to invest and can buy{num_stock}  of {stock_name} at the current price of $')
+    print (f'{first_name} has ${investment_dollar} to invest and can buy{num_stock} of {stock_name} at the current price of ${stock}.')
