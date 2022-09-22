@@ -12,7 +12,7 @@ def snippet_1():
         print(f"The product of u ({u}) and v ({v}) is 10")
     else:
         print(f"The product of u ({u}) and v ({v}) is not 10")
-    snippet_1()
+    
 
 def snippet_2():
     x = 15
@@ -28,7 +28,7 @@ def snippet_2():
 
     else:
         print("z is greater than y")
-    snippet_2()
+    
 
 def snippet_3():
     # TODO: Modify the comparison operator below so the `assert` statement passes
@@ -40,7 +40,7 @@ def snippet_3():
 
     print(f"The value of c ({c}) is True since a ({a}) is equal to b ({b}).")
     assert(c == True)  # <-- DO NOT EDIT THIS LINE
-snippet_3()
+
 
 def snippet_4():
     # TODO: Modify exactly one boolean operator in the assignment of d, so that d evaluates to False
@@ -50,7 +50,7 @@ def snippet_4():
 
     # TODO: Explain how d is set to False in a comment
     assert(d == False)  # <-- DO NOT EDIT THIS LINE
-    snippet_4()
+    
 
 def snippet_5():
     # TODO: Modify the comparison operator so o evalutes to true
@@ -63,4 +63,4 @@ def snippet_5():
 
     print (f"The value of o ({o}) is True since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE
-    snippet_5()
+    
