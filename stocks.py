@@ -1,10 +1,7 @@
 
 def stock_purchases():
-    amazon = 3000
-    apple = 100
-    fb = 250
-    google = 1400
-    msft = 200
+
+    stock={'amazon':3000,'apple':100,'fb':250,'google':1400,'msft':200}
 
     # Given the prices above and a client's investment budget, how much stock can they buy?
     # 1.1 TODO: Ask the client's name (use the string: "What is your name? ") and save it into a variable
@@ -22,18 +19,16 @@ def stock_purchases():
 
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
-    stock = 0
-    if stock_name == 'Amazon':
-        stock = amazon
-    elif stock_name == 'Apple':
-         stock = apple
-    elif stock_name == 'Facebook':
-         stock = 'Fb'
-    elif stock_name == 'Google':
-        stock = 'google'
-    elif stock_name == 'Microsoft':
-        stock = 'mstf'
-
+    if stock_name == "amazon":
+        num_stock = investment_dollar//stock['amazon']
+    elif stock_name == 'apple':
+        num_stock = investment_dollar//stock['apple']
+    elif stock_name == 'fb':
+        num_stock = investment_dollar//stock['fb']
+    elif stock_name == 'google':
+        num_stock = investment_dollar//stock['google']
+    elif stock_name == 'msft':
+        num_stock = investment_dollar//stock['msft']
 
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
